@@ -1,0 +1,31 @@
+import java.util.Scanner;
+class hero{
+    static Scanner sc = new Scanner(System.in);
+    public static void main (String[] args)
+    {
+        System.out.print("1.RM \n2.jin \n3.Suga \n4.J-hope \n5.Jimin \n6.V \n7.JK");
+        System.out.println();
+        System.out.println("Select one idol character : ");
+        int option = sc.nextInt();
+
+        switch(option)
+        {
+            case 1 : System.out.println("Leader");
+                    break;
+            case 2 : System.out.println("Eldest");
+                    break;
+            case 3 : System.out.println("swag");
+                    break;
+            case 4 : System.out.println("Dancer");
+                    break;
+            case 5 : System.out.println("Cutie");
+                    break;
+            case 6 : System.out.println("Handsome");
+                    break;
+            case 7 : System.out.println("Bunny");
+                    break;
+            default : System.out.println("there is no other idel in bts");
+        }
+    }
+
+}
