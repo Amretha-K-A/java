@@ -1,0 +1,16 @@
+import java.util.Scanner;
+class  Alpha
+{
+	static Scanner sc = new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+		System.out.print("Enter the value : ");
+		String str = sc.next();
+		char ch = str.charAt(0);
+		
+		if((ch >='A' && ch <='Z') || (ch>='a' && ch<='z'))
+			System.out.println("the entered value is alphabet");
+		else
+			System.out.println("invalid char");
+	}
+}
