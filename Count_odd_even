@@ -1,0 +1,25 @@
+import java.util.Scanner;
+class Count_odd_even 
+{
+	static Scanner sc = new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+		int odd = 0;
+		int even = 0;
+		int ld;
+		System.out.println("Enter the number : ");
+		int n = sc.nextInt();
+		while(n>0)
+		{
+			ld = n%10;
+			if(ld % 2 !=0)
+				odd++;
+			else
+				even++;
+			n = n/10;
+		}
+		System.out.println("Number of odd is : "+odd);
+		System.out.println("Number of even is : "+even);
+				
+	}
+}
