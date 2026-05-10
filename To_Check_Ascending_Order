@@ -1,0 +1,29 @@
+import java.util.Scanner;
+class AsOrd 
+{
+	static Scanner sc = new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+		int ld;
+		int ldd;
+		System.out.println("Enter The Number : ");
+		int n = sc.nextInt();
+		boolean asd = true ;
+		while(n>9)
+		{
+			ld = n % 10;
+			ldd = (n / 10)%10;
+			if(ldd > ld)
+			{
+				asd = false ;
+				break;	
+			}
+			n = n/10;
+			}
+			if(asd){
+				System.out.println("it is in ascending order");}
+			else{
+				System.out.println("it is not in ascending order");}
+		}
+		
+	}
