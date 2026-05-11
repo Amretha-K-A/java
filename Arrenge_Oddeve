@@ -1,0 +1,29 @@
+import java.util.Scanner;
+class Arrenge_Oddeve
+{
+	static Scanner sc = new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+		System.out.println("Enter the number : ");
+		int n = sc.nextInt();
+		int sum = 0;
+		String odd = "";
+		String eve = "";
+		while(n>0)
+		{
+			int ld = n %10;
+			if(ld % 2!=0){
+				sum = sum + ld;
+				odd = ld +""+ odd;
+				
+			}
+			else
+			{
+				eve = ld +""+ eve;
+			}
+				
+			n = n/10;
+		}
+		System.out.println("Arrange of odd & eve numbers are : " +odd+eve);
+	}
+}
