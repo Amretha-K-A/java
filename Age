@@ -1,0 +1,28 @@
+import java.util.Scanner;
+class Age
+{
+	static Scanner sc = new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+		
+		System.out.println("Enter your date , month ,year : ");
+		int date = sc.nextInt();
+		int month = sc.nextInt();
+		int year = sc.nextInt();
+		
+		System.out.println("Enter the current date , month, year  ");
+		int Currentdate = sc.nextInt();
+		int Currentmonth = sc.nextInt(); 
+		int Currentyear = sc.nextInt();
+		
+		int Datee = Currentdate - date ;
+		int DD = Math.abs(Datee);
+		int Month = Currentmonth - month;
+		int MM = Math.abs(Month);
+		int Year = Currentyear - year;
+		int YY = Math.abs(Year);
+
+		
+		System.out.println( "your age is "  + YY + "Year"+" " + MM + "Month" + " "  + DD + "Day");
+	}
+}
