@@ -1,0 +1,17 @@
+import java.util.Scanner;
+class Vowels 
+{
+	static Scanner sc = new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+		System.out.print("Enter the value : ");
+		String str = sc.next();
+		str = str.toUpperCase();
+		char ch = str.charAt(0);
+		
+		if(ch =='A' || ch =='E' ||ch =='I'|| ch == 'O' || ch =='U')
+			System.out.println("the given value is vowels");
+		else
+			System.out.println("it is not a vowel char");
+	}
+}
