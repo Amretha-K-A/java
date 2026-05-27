@@ -1,0 +1,31 @@
+import java.util.Scanner;
+class WorkingDay_OrNot 
+{
+	static Scanner sc = new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+		System.out.println("------select any number -------");
+		System.out.println("\n1 \n2 \n3 \n4 \n5 \n6 \n7");
+		System.out.print("Enter the value : ");
+		int n = sc.nextInt();
+		
+		switch (n)
+		{
+		case 1 : System.out.println("SUNDAY IT IS NOT A WORKING DAY");
+		         break;
+		case 2 : System.out.println("MONDAY IS A WORKING DAY");
+		         break;
+		case 3 : System.out.println("TUESDAY IS A WORKING DAY");
+		         break;
+		case 4 : System.out.println("WEDNESDAY IS A WORKING DAY");
+		         break;
+		case 5 : System.out.println("THURSDAY IS A WORKING DAY");
+		         break;
+		case 6 : System.out.println("FRIDAY IS A WORKING DAY");
+		         break;
+		case 7 : System.out.println("SATURDAY IS A HALF WORKING DAY");
+		         break;
+		default :System.out.println("there is no such option");
+		}
+	}
+}
