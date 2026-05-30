@@ -1,0 +1,14 @@
+import java.util.Scanner;
+class Circlr_Radius 
+{
+	static Scanner sc = new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+		System.out.println("Enter the radious");
+		double val = sc.nextInt();
+		
+		val = (3.14 *  (val*val));
+		
+		System.out.println(val);
+	}
+}
