@@ -1,0 +1,18 @@
+import java.util.Scanner;
+class ASCII_Value 
+{
+	static Scanner sc = new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+		System.out.println("Enter the char to print the ASCII value : ");
+		String str = sc.next();
+		char ch = str.chatAt(0);
+		int as = ch;
+		
+		if ((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z'))
+			System.out.println(as);
+		else
+			System.out.println("enter the char");
+	}
+}
+ 
