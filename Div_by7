@@ -1,0 +1,15 @@
+import java.util.Scanner;
+class  Div_by7
+{
+	static Scanner sc = new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+		System.out.print("Enter the number : ");
+		int num = sc.nextInt();
+		
+		if(num % 7 ==0)
+			System.out.println("It is divisable by 7");
+		else
+			System.out.println("It cannot be divisable by 7");
+	}
+}
