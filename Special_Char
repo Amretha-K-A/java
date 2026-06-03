@@ -1,0 +1,18 @@
+import java.util.Scanner;
+class Special_Char 
+{
+	static Scanner sc = new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+		System.out.println("Enter the value");
+		String str = sc.next();
+		char ch = str.charAt(0);
+		
+		if((ch>='a' && ch<='z') || (ch>='A' && ch<='Z'))
+			System.out.println("please enter the valid value");
+		else if(ch >='0' && ch<='9')
+			System.out.println("please enter the valid value");
+		else
+			System.out.println("it is a special character");
+	}
+}
