@@ -1,0 +1,31 @@
+import java.util.Scanner;
+class Rem_Days 
+{
+	static Scanner sc = new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+		System.out.println("1 \n2 \n3 \n4 \n5 \n6 \n7");
+		System.out.println("Enter the Number");
+		int n = sc.nextInt();
+		
+		switch (n)
+		{
+		case 1 : System.out.println("S,M,T,W,Th,F,S");
+		         break;
+		case 2 : System.out.println("M,T,W,T,F,S");
+		         break;
+		case 3 : System.out.println("T,W,Th,F,S");
+		         break;
+		case 4 : System.out.println("W,Th,F,S");
+		         break;
+		case 5 : System.out.println("Th,F,S");
+		         break;
+		case 6 : System.out.println("F,S");
+		         break;
+		case 7: System.out.println("S");
+		         break;
+		default : System.out.println("there is no such options");
+		}
+		
+	}
+}
