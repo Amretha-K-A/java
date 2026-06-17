@@ -1,0 +1,32 @@
+import java.util.Scanner;
+class BankMain 
+{
+	static
+	{
+		System.out.println("WELCOME TO SBI");
+	}
+	public static Scanner sc = new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+		int option ;
+		do{
+		System.out.println("1.DEPOSITE \n2.WITHDRAW \n3.DISPLAY \n4.EXIT");
+		System.out.println("SELECT ANY ONE OPTION");
+		option = sc.nextInt();
+		
+		switch(option)
+		{
+			case 1 : System.out.println("WELCOME TO DEPOSITE YOUR MONEY");
+			         break;
+			case 2 : System.out.println("WELCOME TO WITHDRAW YOUR MONEY");
+			         break;
+			case 3 : System.out.println("WELCOME TO dissplay YOUR BALANCE");
+			         break;
+			case 4 : System.out.println("THANK YOU WISIT AGAIN");
+			         break;
+		}
+		}
+		while(option != 4);
+	}
+}
+ 
