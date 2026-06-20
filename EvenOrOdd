@@ -1,0 +1,56 @@
+import java.util.*;
+class EvenOrOdd 
+{
+	static Scanner sc= new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+		System.out.print("Enter the 1st number ");
+		int first = sc.nextInt();
+		System.out.print("Enter the 2nd number ");
+		int second = sc.nextInt();
+		System.out.print("Enter the 3rd number ");		
+		int third = sc.nextInt();
+		System.out.print("Enter the 4th number ");		
+		int fourth = sc.nextInt();
+		System.out.print("Enter the 5th number ");
+		int fiveth = sc.nextInt(); 
+		int count = 0;
+		
+		if(first %2 ==0)
+			count++;
+		if(second %2==0)
+			count++;
+		if(third %2==0)
+			count++;
+		if(fourth % 2==0)
+			count++;
+		if(fiveth %2==0)
+			count++;
+		int odd = 5 - count;
+		System.out.println("Even:"+count);
+		System.out.println("Odd:"+odd);
+		
+		/*int countt = 0;
+		if(first %2 ==0)
+			count++;
+		else if (first %2 !=0)
+			countt++;
+		if(second %2==0)
+			count++;
+		else if(second %2 !=0)
+			countt++;
+		if(third %2==0)
+			count++;
+		else if(third %2 !=0)
+			countt++;
+		if(fourth % 2==0)
+			count++;
+		else if(fourth %2 !=0)
+			countt++;
+		if(fiveth %2==0)
+			count++;
+		else if(fiveth %2 !=0)
+			countt++;
+		 */
+	}
+}
