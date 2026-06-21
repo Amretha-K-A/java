@@ -1,0 +1,26 @@
+import java.util.*;
+class PrimeRange 
+{
+	static Scanner sc = new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+		System.out.print("Enter the starting number:");
+		int s = sc.nextInt();
+		System.out.print("Enter the last number:");
+		int l = sc.nextInt();
+		int total = 0;
+		int count;
+		for(int num = s; num<=l; num++)
+		{
+			count = 0;
+			for(int i =1; i<=num; i++)
+			{
+			if(num % i ==0)
+				count++;
+		}
+		if(count==2)
+			total++;
+		}
+		System.out.println("Total num of prime:"+total);
+	}
+}
