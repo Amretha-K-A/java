@@ -1,0 +1,36 @@
+class Odd_eveSec_withCount
+{
+	public static void main(String[] args) 
+	{
+		int num = 361589;
+		int odd = 0, eve= 0, oddrev = 0, everev=0, oddcount = 0, evecount = 0;
+		while(num>0)
+		{
+			int ld = num % 10;
+			if(ld % 2 !=0)
+			{
+				odd = odd * 10 + ld;
+				oddcount++;
+			}
+			else if (ld % 2 ==0)
+			{
+				eve = eve * 10 +ld;
+				evecount++;
+			}
+			num = num / 10;
+		}
+		while(odd > 0)
+		{
+			int lld = odd % 10;
+			oddrev =  oddrev * 10 + lld;
+			odd = odd / 10;
+		}
+		while(eve > 0)
+		{
+			int ldd = eve % 10;
+			everev =  everev * 10 + ldd;
+			eve = eve / 10;
+		} 
+		System.out.println("odd_even sequence :"+oddrev + oddcount + everev + evecount );
+	}
+}
