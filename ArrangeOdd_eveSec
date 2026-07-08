@@ -1,0 +1,34 @@
+class  ArrangeOdd_eveSec
+{
+	public static void main(String[] args) 
+	{
+		int num = 361589;
+		int odd = 0, eve= 0, rev = 0;
+		while(num>0)
+		{
+			int ld = num % 10;
+			if(ld % 2 !=0)
+			{
+				odd = odd * 10 + ld;
+			}
+			else if (ld % 2 ==0)
+			{
+				eve = eve * 10 +ld;
+			}
+			num = num / 10;
+		}
+		while(odd > 0)
+		{
+			int lld = odd % 10;
+			rev =  rev * 10 + lld;
+			odd = odd / 10;
+		}
+		while(eve > 0)
+		{
+			int ldd = eve % 10;
+			rev =  rev * 10 + ldd;
+			eve = eve / 10;
+		}
+		System.out.println("odd_even sequence :"+rev);
+	}
+}
