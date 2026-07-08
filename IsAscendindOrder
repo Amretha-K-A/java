@@ -1,0 +1,22 @@
+class IsAscendindOrder 
+{
+	public static void main(String[] args) 
+	{
+		int num = 4567;
+		int val = 10;
+		boolean flag = true;
+		while(num >0)
+		{
+			int ld = num % 10;
+			if(ld > val)
+				flag = false;
+			val = ld;
+			num = num / 10;
+			
+		}
+		if(flag == true)
+			System.out.println("Yes");
+		else
+			System.out.println("No");
+	}
+}
