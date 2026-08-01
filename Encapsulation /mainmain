@@ -1,0 +1,33 @@
+class main 
+{
+	private int a;
+	private String b;
+	
+	main(int a, String b)
+	{
+		this.a =a;
+		this.b = b;
+	}
+	
+	public int getInt()
+	{
+		return a;
+	}
+	
+	public void setInt(int a)
+	{
+		this.a = a;
+	}
+}
+class mainmain 
+{
+	public static void main(String[] args) 
+	{
+		main m = new main(1,"hello");
+		System.out.println(m.getInt());
+		//System.out.println(m.b);
+		m.setInt(444);
+		System.out.println(m.getInt());
+	}
+}
+
