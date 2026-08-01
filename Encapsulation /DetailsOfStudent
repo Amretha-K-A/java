@@ -1,0 +1,56 @@
+class Detail
+{
+	private String name;
+	private int rollno;
+	
+	Detail(){}
+	
+	Detail(String name, int rollno)
+	{
+		this.name = name;
+		this.rollno = rollno;
+	}
+	
+	public String getName()
+	{
+		return name;
+	}
+	public void setName(String name)
+	{
+		this.name = name;
+	}
+	
+	public int getRollno()
+	{
+		return rollno;
+	}
+	public void setRollno(int rollno)
+	{
+		this.rollno = rollno;
+	}
+	void display()
+	{
+		System.out.println(name);
+		System.out.println(rollno);
+	}
+	
+	
+}
+class DetailMain 
+{
+	public static void main(String[] args) 
+	{
+		Detail s1 = new Detail();
+		//System.out.println(s1.getName());
+		//System.out.println(s1.getRollno());
+		s1.display();
+		Detail d2 = new Detail("vara",345);
+			d2.display();
+		Detail d3 = new Detail();
+		d3.setName("fara");
+		d3.display();
+		System.out.println(d3.getName());
+		d3.setRollno(12345);
+		System.out.println(d3.getRollno());
+	}
+}
