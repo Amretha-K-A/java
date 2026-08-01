@@ -1,0 +1,75 @@
+class Employee 
+{
+	private String ename;
+	private int eid;
+	private double sal;
+	
+	Employee(){}
+	
+	Employee(String ename , int eid, double sal)
+	{
+		this.ename = ename;
+		this.eid = eid;
+		this.sal = sal;
+	}
+	
+		
+	
+	//getter and setter for ename
+	
+	
+	
+	public String getEname()
+	{
+		return ename;
+	}
+	
+	public void setEname(String ename)
+	{
+		this.ename = ename;
+	}
+	
+	//getter and setter for eid
+	
+	public int getEid()
+	{
+		return eid;
+	}
+	public void setEid(int eid)
+	{
+		this.eid = eid;
+	}
+	
+	//getter and setter for sal
+	public double getSal()
+	{
+		return sal;
+	}
+	
+	public void setSal(double sal)
+	{
+		this.sal=sal;
+	}
+
+class EmployeeDriver 
+{
+	public static void main(String[] args) 
+	{
+		
+		Employee e1 = new Employee("miller",123,34567);
+		e1.setEname("Amre");
+		System.out.println(e1.getEname());
+		
+		System.out.println(e1.getEid());
+		System.out.println(e1.getSal());
+		
+		
+		
+	}
+}
+
+	
+	
+	
+
+}
