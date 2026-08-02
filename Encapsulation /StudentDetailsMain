@@ -1,0 +1,53 @@
+class StudentDetails
+{
+	private String name;
+	private int rollno;
+	private double mark;
+	StudentDetails(){}
+	StudentDetails(String name, int rollno, double mark)
+	{
+		this.name = name;
+		this.rollno = rollno;
+		this.mark = mark;
+	}
+	public String getName()
+	{
+		return name;
+	}
+	public void setName(String name)
+	{
+		this.name = name;
+	}
+	public int getRollno()
+	{
+		return rollno;
+	}
+	public void setName(int rollno)
+	{
+		this.rollno = rollno;
+	}
+	public double getMark()
+	{
+		return mark;
+	}
+	public void setName(double mark)
+	{
+		this.mark = mark;
+	}
+
+	
+}
+class StudentDetailsMain 
+{
+	public static void main(String[] args) 
+	{
+		StudentDetails s1 = new StudentDetails("Amre",123,68.83);
+		//System.out.println(s1.name); private valuse cannot display values S
+		
+		System.out.println(s1.getName());
+		System.out.println(s1.getRollno());
+		System.out.println(s1.getMark());
+		
+		
+	}
+}
