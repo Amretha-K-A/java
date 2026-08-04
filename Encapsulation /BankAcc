@@ -1,0 +1,62 @@
+class Bank
+{
+	private long accountnum;
+	private String holder;
+	private double balance;
+	Bank(){}
+	
+	Bank(long accountnum,String holder, double balance)
+	{
+		this.accountnum = accountnum;
+		this.holder = holder;
+		this.balance = balance;
+	}
+	public long getAccNum()
+	{
+		return accountnum;
+	}
+	public String getHolder()
+	{
+		return holder;
+	}
+	public double getBalance()
+	{
+		return balance;
+	}
+	void display()
+	{
+		System.out.println(accountnum);
+		System.out.println(holder);
+		System.out.println(balance);
+	}
+	public double deposite(double amount)
+	{
+		this.balance = balance + amount;
+		System.out.println("total amount"+balance);
+		return balance;
+		
+		
+		
+	}
+	
+	public double withdraw(double money)
+	{
+		System.out.println("money is to be deposite "+money);
+		this.balance = balance - money;
+		System.out.println("balance:"+balance);
+		return balance;
+	}
+	
+}
+class BankAcc 
+{
+	public static void main(String[] args) 
+	{
+		Bank b1 = new Bank(123456768,"Amre",507499);
+		//System.out.println(b1.accountnum);
+		b1.display();
+		
+		b1.deposite(500);
+		b1.withdraw(9);
+	}
+}
