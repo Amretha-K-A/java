@@ -1,0 +1,23 @@
+class Animal
+{
+	void eat()
+	{
+		System.out.println("Animals can eat");
+	}
+}
+class Cat extends Animal
+{
+	void sound()
+	{
+		System.out.println("cat sound like meow");
+	}
+}
+class AnimalMain 
+{
+	public static void main(String[] args) 
+	{
+		Cat c1 = new Cat();
+		c1.eat();
+		c1.sound();
+	}
+}
