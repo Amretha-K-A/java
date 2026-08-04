@@ -1,0 +1,38 @@
+class Bank
+{
+	void intrest()
+	{
+		System.out.println("Bank provide intrest");
+	}
+}
+class SBI extends Bank
+{
+	void display()
+	{
+		System.out.println("welcome to SBI");
+	}
+}
+class HDFC extends Bank
+{
+	void displayBank()
+	{
+		System.out.println("welcome to HDFC");
+	}
+}
+class ICICI extends Bank
+{
+	void displayBank()
+	{
+		System.out.println("welcome to ICICI");
+	}
+}
+class BankMain 
+{
+	public static void main(String[] args) 
+	{
+		ICICI b1 = new ICICI();
+		b1.intrest();
+		b1.displayBank();
+		
+	}
+}
