@@ -1,0 +1,58 @@
+class College
+{
+	String clg ;
+	String place;
+	long contact;
+	
+	void details()
+	{
+		System.out.println("College name: "+clg);
+		System.out.println("College located: "+place);
+		System.out.println("College contact: "+contact);
+	}
+}
+class Dept extends College
+{
+	String dept;
+	int sem;
+	//String subject;
+	
+	void deptDetail()
+	{
+		System.out.println("Depeartment: "+dept);
+		System.out.println("sem: "+sem);
+		//System.out.println("Subject"+subject);
+	}
+}
+class Student extends Dept
+{
+	String name;
+	int roll;
+	
+	void stuDetail()
+	{
+		System.out.println("Student name: "+name);
+		System.out.println("Roll number: "+roll);
+	}
+}
+class CollegeMain 
+{
+	public static void main(String[] args) 
+	{
+		Student s1 = new Student();
+		s1.clg = "vel tech";
+		s1.place ="avadi";
+		s1.contact= 1234567893;
+		s1.dept= "CSE";
+		s1.sem = 7;
+		s1.name = "Amre";
+		s1.roll = 1234;
+		s1.details();
+		s1.deptDetail();
+		s1.stuDetail();
+		
+		
+	}
+}
+
+
