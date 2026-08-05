@@ -1,0 +1,35 @@
+class A
+{
+	A()
+	{
+		System.out.println("nothing");
+	}
+	A(int i)
+	{
+		this("hi",34);
+		
+		System.out.println("number entered: "+i);
+	}
+	A(String s)
+	{
+		this(34);
+		System.out.println("String: "+s);
+	}
+	A(String a , int v)
+	{
+		this();
+		System.out.println("String:"+a);
+		System.out.println("int:"+v);
+	}
+		
+	
+}
+
+class Amain 
+{
+	public static void main(String[] args) 
+	{
+		A a3 = new A("AMre");
+		
+	}
+}
