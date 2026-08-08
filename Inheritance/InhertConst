@@ -1,0 +1,28 @@
+class Dept
+{
+	String Dname;
+	
+	Dept()
+	{
+		System.out.println("Dept of CSE");
+	}
+	
+}
+class Stu extends Dept
+{
+	String sname;
+	Stu()
+	{
+		super();
+		System.out.println("Student of CSE");
+	}
+}
+class InhertConst 
+{
+	public static void main(String[] args) 
+	{
+		Stu s1 = new Stu();
+		//s1.sname = "Amre";
+		System.out.println(s1.sname = "Amre");
+	}
+}
