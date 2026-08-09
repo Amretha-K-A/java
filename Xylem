@@ -1,0 +1,31 @@
+class Xylem  
+{
+	public static void main(String[] args) 
+	{
+		int n = 21201;
+		
+		int ld = n%10;
+		n = n/10;
+		
+		int midsum = 0;
+		while(n>9)
+		{
+			int ldd = n%10;
+			midsum = midsum + ldd;
+			n = n/10;
+			
+		}
+		int sum = n + ld;
+		System.out.println("First digit : " +n);
+		System.out.println(ld);
+		System.out.println(sum);
+		System.out.println(midsum);
+		
+		if (midsum == sum )
+			System.out.println("it is Xylem number ");
+		else
+			System.out.println("it is not a Xylem number");
+		
+		
+	}
+}
