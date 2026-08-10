@@ -1,0 +1,21 @@
+import java.util.Scanner;
+class traffic{
+    static Scanner sc = new Scanner(System.in);
+    public static void main (String[] args)
+    {
+        System.out.println("Red \nYellow \nGreen ");                
+        System.out.println("Enter the color :");
+        String color = sc.next();
+
+        switch(color)
+        {
+            case "red" : System.out.println("Stop");
+                    break;
+            case "yellow" : System.out.println("get ready");
+                    break;
+            case "green" : System.out.println("go");
+                    break;
+            default : System.out.println("there is no such colour");
+        }
+    }
+}
