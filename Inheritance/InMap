@@ -1,0 +1,23 @@
+class Rote
+{
+	void direction()
+	{
+		System.out.println("take righ tand walk for 2km and turn left walk for 4km you will reach yoiur distination");
+	}
+}
+class Map extends Rote
+{
+	void help()
+	{
+		System.out.println("here the direction for distiny");
+	}
+}
+class InMap 
+{
+	public static void main(String[] args) 
+	{
+		Map m1 = new Map();
+		m1.direction();
+		m1.help();
+	}
+}
