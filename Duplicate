@@ -1,0 +1,22 @@
+class Duplicate
+{
+	public static void main(String[] args) 
+	{
+		int a[] = {1,2,3,4,5,6,6,2,4,1,9,4};
+		int n = a.length;
+		int visited = -1;
+		for(int i =0 ; i<n; i++)
+		{
+			for(int j =i+1; j<a.length;j++)
+			{
+			if(a [i] ==a[j])
+			a[j] = visited;
+			}
+		}
+		for(int k =0; k<a.length;k++)
+		
+			if(a[k] !=-1) 
+				System.out.println(a[k]);
+		
+	}
+}
